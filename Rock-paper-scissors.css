@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+div.sfondo,
+section.sfondo-scelta{
+    filter:brightness(0.5);
+   
+}
+
+div.containerS{
+display: flex;
+flex-direction: column;
+align-items: center;
+background:radial-gradient( hsl(214, 47%, 23%) ,hsl(237, 49%, 15%));
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+font-family: "Barlow Semi Condensed";
+}
+div.rock-paper-scissors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid  hsl(217, 16%, 45%);
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    width: 65%;
+}
+
+
+div.punteggio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: 130px;
+    height: 100px;
+    flex-direction:column;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 2px 8px 15px black;
+}
+
+div.punteggio h4{
+text-transform: uppercase;
+color: hsl(229, 64%, 46%);
+}
+
+div.punteggio p{
+    font-size: 50px;
+    color:  hsl(229, 25%, 31%);
+}
+div.contenitoreSupremo{
+margin:auto 0;
+background-image: url(./images/bg-triangle.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 250px;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction:column;
+
+}
+
+
+div.contenitore-segni{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+    height:auto;
+    margin-bottom: 20px;
+}
+
+ div.Carta{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid  hsl(230, 89%, 65%) ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-paper.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0 hsl(229, 64%, 46%) ;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+ div.Forbici{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid hsl(40, 84%, 53%)  ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-scissors.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0   hsl(39, 87%, 41%) ;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+div.sasso{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid  hsl(349, 70%, 56%) ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-rock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0  hsl(349, 68%, 40%) ;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+div.sasso:hover,
+div.Forbici:hover,
+div.Carta:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+div.NewCarta{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid  hsl(230, 89%, 65%) ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-paper.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0 hsl(229, 64%, 46%) ;
+
+}
+div.NewSasso{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid  hsl(349, 70%, 56%) ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-rock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0  hsl(349, 68%, 40%) ;
+
+}
+div.NewForbici{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    border: 20px solid hsl(40, 84%, 53%)  ; 
+    background-color: white;
+    filter: brightness(0.9);
+    background-image: url(./images/icon-scissors.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 6px 3px  hsl(219, 12%, 66%);
+    box-shadow: 0 8px 0   hsl(39, 87%, 41%) ;
+    
+}
+
+button.regole{
+    position: absolute;
+    top: 90%;
+    right: 50px;
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: 2px solid  hsl(219, 12%, 66%);
+    background-color: transparent;
+    color:  hsl(219, 37%, 89%);
+    text-transform: uppercase;
+   font-weight: 700;
+   text-align: center;
+    cursor:pointer;
+    font-size:12px;
+    letter-spacing: 3px;
+    font-family: "Barlow Semi Condensed";
+    transition: 0.4s;
+}
+button.regole:hover{
+    transform: scale(1.2);
+    
+    transition: 0.4s;
+}
+
+section.regole{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div.regole{
+   display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    top: 15%;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+div.regole div.impostazioni{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+div.regole div.impostazioni h2{
+    font-size: 35px;
+    margin-right: 230px;
+    font-family:  "Barlow Semi Condensed";
+    text-transform: uppercase;
+    color: hsl(229, 25%, 31%);
+}
+div.regole div.impostazioni img{
+    cursor: pointer;
+}
+
+div.vuoto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.close{
+    display: none;
+}
+
+div.contenitore-sim{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+/*fai la scelta e togli il menu section*/
+
+
+.section{
+    position: absolute;
+    top: 300px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    display:none;
+
+}
+
+div.scelta{
+
+ width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: hsl(229, 25%, 31%);
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+div.titoli{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    width: 100%;
+    bottom:60px;
+   
+}
+
+h2{
+   
+    font-family:  "Barlow Semi Condensed";
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+div.simboli{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+   
+}
+div.contenitore-rigioca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.rigioca{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+div.rigioca h1{
+    font-size: 60px;
+    color:white;
+    text-transform:uppercase;
+ font-family:  "Barlow Semi Condensed";
+ letter-spacing: 4px;
+}
+
+div.rigioca button{
+    padding:15px 80px;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-family:  "Barlow Semi Condensed";
+    background-color: white;
+    color: black;
+    border:none;
+    border-radius: 20px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+div.rigioca button:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+
+}
+
+/*SCELTA AVVERSARIO*/
+div.vuoto{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: hsl(229, 25%, 31%);
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+div.contenitore-cpu{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+
+}
+
+/*MEDIA QUERY WIDTH*/
+@media screen and (max-width:1050px){
+    .section{
+        top: 200px;
+    }
+div.rigioca{
+    position: absolute;
+    top: 250px;
+
+}
+
+div.contenitoreSupremo{
+    margin: auto 0;
+}
+
+
+}
+@media screen and (max-width:700px){
+    div.rock-paper-scissors{
+        width: 80%;
+    }
+    a.logo img{
+        width: 70%;
+  
+}
+div.contenitoreSupremo{
+    transform:scale(0.9);
+}
+
+}
+@media screen and (max-width:400px){
+    div.simboli{
+        transform: scale(0.7);
+    }
+    div.contenitore-cpu{
+        transform: scale(0.7);
+    }
+    h2{
+        font-size: larger;
+    }
+    div.regole{
+        height: 100%;
+        border-radius: 0;
+        top: 0;
+        width: 100%;
+    }
+    div.rigioca h1{
+        font-size: 45px;
+    }
+    div.regole div.impostazioni{
+        margin: 100px 0;
+        align-items: baseline;
+        top:50px;
+        position: absolute;
+    }
+    button.regole{
+        background-color: #161b3e;
+    }
+    div.contenitoreSupremo{
+        transform:scale(0.7);
+    }
+}
+
+
+
+
+
+/*MEDIA QUERY HEIGHT*/
+@media  screen and (max-height:700px) {
+    div.containerS{
+        height: 150vh;
+    }
+    div.contenitoreSupremo{
+        margin: 30px 0;
+    }
+    button.regole{
+        top:140%;
+    }
+}
+
+@media  screen and (max-height:480px){
+    div.containerS{
+        height:200vh;
+    }
+}
+
+@media  screen and (max-height:350px){
+    div.containerS{
+        height:250vh;
+    }
+}

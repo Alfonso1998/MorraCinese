@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="Rock-paper-scissors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="containerS" id="container">
+        <div class="rock-paper-scissors">
+            <a href="#" class="logo"><img src="./images/logo.svg" alt=""></a>
+            <div class="punteggio">
+                <h4>score</h4>
+                <p id="score" class="punteggio">0</p>
+            </div>
+        </div>
+
+
+
+        <div class="contenitoreSupremo" id="contenitore-simboli">
+            <div class="contenitore-segni">
+                <div class="Carta" id="carta" onclick="UserChoise('carta')">
+                </div>
+
+                <div class="Forbici" id="forbici" onclick="UserChoise('forbici')">
+                </div>
+            </div>
+
+            <div class="sasso" id="sasso" onclick="UserChoise('sasso')">
+            </div>
+          
+        </div>
+       
+    </div>
+
+    <!--SELEZIONE SIMBOLO-->
+    <section id="section" class="section">
+            <div class="simboli">
+                <h2 class="you">your choise</h2>
+                <div class="scelta" id="scelta">
+                  
+                </div>
+            </div>
+        <div class="contenitore-rigioca">
+            <div class="rigioca">
+                <h1 id="esito">0</h1>
+                <button class="rigioca" id="rigioca">play again</button>
+            </div>
+        </div>
+        
+    <!--SCELTA CASUALE AVVERSARIO (CPU)-->
+        <div class="contenitore-cpu">
+            <h2 class="opponent">opponent choise</h2>
+        <div class="vuoto" id="vuoto">
+          
+        </div>
+        
+    </div>
+   
+
+    </section>
+
+  <!--REGOLE DEL GIOCO-->
+    <section class="regole" id="section-regole">
+        <div class="regole" id="impos">
+            <div class="impostazioni">
+                <h2>rules</h2>
+                <img src="./images/icon-close.svg" alt="" id="close-rules">
+            </div>
+            <img id="rules" src="./images/image-rules.svg" alt="">
+        </div>
+        <button id="regole" class="regole">rules</button>
+    </section>
+  
+
+
+
+
+
+
+  
+   
+</body>
+<script src="Rock-paper-scissors.js"></script>
+
+</html>
